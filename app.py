@@ -12,6 +12,7 @@ def index():
         city = "Bangalore" #default city is Bangalore
 
     api = "997ea79e1c9575bd4f087cf90e68205d"
+    #api = "3516a72eb69f779a9c0e683d651fc1c2"
     url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + api
     source = urllib.request.urlopen(url).read()
     print (source)
