@@ -9,7 +9,7 @@ def index():
     if request.method == 'POST':
         city = request.form['city']
     else :
-        city = "Bangalore"
+        city = "Bangalore" #default city is Bangalore
 
     api = "997ea79e1c9575bd4f087cf90e68205d"
     url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + api
